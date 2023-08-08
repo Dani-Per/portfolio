@@ -136,15 +136,15 @@ header img {
 }
 
 .bgImg1 {
-  background-image: url(/img/proj1.jpg);
+  background-image: url(./img/proj1.jpg);
 }
 
 .bgImg2 {
-  background-image: url(/img/proj2.jpg);
+  background-image: url(./img/proj2.jpg);
 }
 
 .bgImg3 {
-  background-image: url(/img/proj3.jpg);
+  background-image: url(./img/proj3.jpg);
 }
 
 .trabajos h2 {
