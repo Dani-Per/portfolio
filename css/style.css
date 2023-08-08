@@ -1,51 +1,3 @@
-/* Grid */
-
-/* .grid {
-  display: grid;
-  grid-template-rows: repeat(0, 1fr);
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 0 16px;
-  margin: 0 64px;
-}
-
-.col-12 {
-  grid-column: auto/span 12;
-}
-.col-11 {
-  grid-column: auto/span 11;
-}
-.col-10 {
-  grid-column: auto/span 10;
-}
-.col-9 {
-  grid-column: auto/span 9;
-}
-.col-8 {
-  grid-column: auto/span 8;
-}
-.col-7 {
-  grid-column: auto/span 7;
-}
-.col-6 {
-  grid-column: auto/span 6;
-}
-.col-5 {
-  grid-column: auto/span 5;
-}
-.col-4 {
-  grid-column: auto/span 4;
-}
-.col-3 {
-  grid-column: auto/span 3;
-}
-.col-2 {
-  grid-column: auto/span 2;
-}
-
-.col- {
-  grid-column: auto/span 1;
-} */
-
 body {
   margin: 0;
   background-color: hsl(0, 0%, 13%);
@@ -53,9 +5,17 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+p {
+  margin: 0px;
+}
+
 a {
   color: white;
   text-decoration: none;
+}
+
+a:hover {
+  color: white;
 }
 
 h1 {
@@ -66,53 +26,14 @@ h1 {
 
 h2 {
   font-size: 56px;
-  margin-top: 0;
-  margin-bottom: 48px;
+  font-weight: 800;
   text-align: center;
 }
 
-h3 {
-  font-size: 32px;
-  margin-top: 0;
-  margin-bottom: 18px;
-}
-
-section {
-  border-bottom: 1px solid white;
-}
-
-.bgImg {
-  width: 605px;
-  height: 464px;
-  background-image: url("https://placehold.co/605x406");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background: white; */
-}
-
-/* Header */
-
-header {
-  display: flex;
-  align-items: center;
-  padding: 16px 0px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-header nav {
-  /* order: 2; */
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0px;
-}
-
-nav li {
-  margin: 0 16px;
+hr {
+  margin: 0px;
+  border: 1px solid #616161;
+  opacity: 100%;
 }
 
 header .navButton {
@@ -120,10 +41,10 @@ header .navButton {
   text-decoration: none;
   padding: 10px 20px;
   background-color: transparent;
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   border-radius: 18px;
-  border: 1px solid white;
+  border: 1px solid black;
   margin-right: 64px;
 }
 
@@ -132,40 +53,49 @@ header .navButton:hover {
 }
 
 header img {
-  margin-left: 64px;
+  margin-left: 12px;
+}
+
+@media screen and (min-width: 992px) {
+  header img {
+    margin-left: 64px;
+  }
 }
 
 /* Hero */
+
 .hero {
-  padding: 140px 80px;
+  margin-top: 96px;
+  margin-bottom: 112px;
 }
-.hero div {
-  display: inline-block;
-  width: 49%;
-  vertical-align: middle;
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: bold;
+  max-width: 516px;
+  background: linear-gradient(90deg, #00f0ff 0%, #b454ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .heroSubtitle {
-  font-size: 32px;
-}
-
-.hero img {
-  width: 49%;
-  vertical-align: middle;
-  margin: 0;
+  font-size: 24px;
+  max-width: 516px;
+  color: #eee;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 /* Hero 2 */
 .hero2 {
-  background-image: url("https://placehold.co/1200x400");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 400px;
+  background: linear-gradient(180deg, #07162C 14.90%, #06F 69.06%, #93BEFF 100%);
+  height: 615px;
 }
 
 .hero2 h1 {
-  margin-top: 48px;
+  margin-top: 20%;
   display: inline-block;
   padding: 16px;
   background-color: #000000cc;
@@ -174,80 +104,127 @@ header img {
 /* Ver más */
 
 .verMas {
-  background-image: url("https://placehold.co/1200x200");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 200px;
+  display: flex;
+  background-color: #638FFF;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
 }
 
 .verMas a {
-  margin: 48px auto 0;
-  text-align: center;
-  display: block;
-  padding: 16px;
-  font-size: 20px;
-  font-weight: bold;
   color: white;
-  background-color: #000000cc;
-  border-radius: 48px;
-  width: 320px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 68px;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2.56px;
   text-transform: uppercase;
 }
 
+.verMas a:hover {
+  background-color: black;
+}
+
 /* Trabajos */
+
+.trabajos .bgImg {
+  height: 464px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgImg1 {
+  background-image: url(/img/proj1.jpg);
+}
+
+.bgImg2 {
+  background-image: url(/img/proj2.jpg);
+}
+
+.bgImg3 {
+  background-image: url(/img/proj3.jpg);
+}
+
 .trabajos h2 {
-  margin-bottom: 174px;
+  margin: 90px 0 174px;
+  font-weight: 900;
+}
+
+.trabajos h3 {
+  font-size: 32px;
+  line-height: 47px;
+  margin-top: 16px;
+  margin-bottom: 18px;
+  font-weight: Bold;
+}
+
+.trabajos p {
+  font-size: 20px;
+  color: #e0e0e0;
 }
 
 .trabajos .projectText a {
   font-size: 20px;
   text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
 }
 
-.trabajos .projectText,
-.trabajos .bgImg {
-  display: inline-block;
-  width: 49%;
-  vertical-align: top;
+.trabajos .projectText a:hover {
+  background-color: white;
+  background-size: 120% 100%;
+  text-decoration: none;
+  color: black;
 }
 
-.trabajosDerecha .projectText {
-  margin-left: 16px;
-  width: 46%;
+.trabajos :is(p, h3, a) {
+  max-width: 419px;
+}
+
+.hrTrabajos {
+  margin-bottom: 292px;
 }
 
 /* Trabajos Main */
 
-.trabajosMain img {
-  border-radius: 48px;
-  width: 100%;
-  margin-bottom: 8px;
+.trabajosMain h2 {
+  margin-top: 201px;
+  margin-bottom: 56px;
 }
 
-.job {
-  display: inline-block;
-  width: 45%;
-  margin: 16px 16px 72px;
-  position: relative;
+.trabajosMain img {
+  border-radius: 24px 24px 0px 0px;
+  width: 100%;
 }
 
 .jobDescription {
-  border: solid #616161 1px;
-  border-radius: 32px;
-  padding: 32px 48px 24px;
+  border: solid #424242 1px;
+  border-radius: 0px 0px 24px 24px;
+  padding: 32px 40px 40px 40px;
   display: grid;
-  grid-template-areas: "title icon"
-                       "text text";
+  grid-template-areas:
+    "title icon"
+    "text text";
   grid-template-columns: 1fr 30px;
 }
 
 .jobDescription h3 {
   grid-area: title;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .jobDescription p {
   grid-area: text;
+  color: #e0e0e0;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .jobDescription a {
@@ -256,9 +233,19 @@ header img {
 
 .jobDescription a img {
   border-radius: 0;
+  width: 24px;
+}
+
+.jobsDivider {
+  margin-top: 208px;
 }
 
 /* Skills */
+
+.skills h2 {
+  margin: 100px auto 90px;
+}
+
 .skills div {
   display: inline-block;
   width: 49%;
@@ -278,19 +265,17 @@ header img {
 .skills img {
   position: absolute;
   left: calc(50% - 201px);
+  margin-top: 80px;
+}
+
+.skills hr {
+  margin: 120px 0 40px
 }
 
 /* Sobre mi */
-.aboutMe img,
-.aboutMe div {
-  display: inline-block;
-  width: 49%;
-  vertical-align: top;
-}
 
-.aboutMe div {
-  width: 45%;
-  margin-left: 24px;
+.aboutMe h2 {
+  margin: 100px auto 116px;
 }
 
 .aboutText1 {
@@ -303,7 +288,17 @@ header img {
   line-height: 1.5;
 }
 
+.aboutMe {
+  margin-bottom: 112px;
+}
+
+
 /* Contacto */
+
+.contact {
+  margin: 100px auto 108px;
+}
+
 .contact a {
   display: block;
   text-align: center;
@@ -334,7 +329,7 @@ header img {
   display: block;
   width: 401px;
   height: 64px;
-  margin: auto;
+  margin: 40px auto;
   font-family: Helvetica Now Display;
   font-weight: bold;
   font-size: 16px;
@@ -348,32 +343,61 @@ header img {
 
 footer {
   color: black;
-  background-color: #bdbdbd;
-  text-align: center;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
   padding: 48px 0;
 }
 
-footer ul {
-  padding: 0px;
+.footerDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+  align-items: center;
+  color: #bdbdbd;
 }
 
-footer ul li {
-  display: inline;
-  margin: 0 8px;
+footer .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 100%;
+  border-color: #616161;
 }
 
 footer a {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 8px;
-  color: black;
+  color: #bdbdbd;
+  display: flex;
 }
 
-.socialIcon {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  border: 1px solid black;
-  border-radius: 100%;
-  border-color: black;
+.linkedin:hover {
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+
+.behance:hover {
+  background-color: #053eff;
+  border-color: #053eff;
+}
+
+.instagram:hover {
+  background-color: #f10174;
+  border-color: #f10174;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  gap: 24px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+footer ul li {
+  list-style: none;
 }

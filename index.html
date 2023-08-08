@@ -3,77 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Daniel Pernigotti</title>
   </head>
   <body>
     <header>
-      <a href="./index.html">
-        <img src="./img/logo.png" alt="Logo" />
-      </a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./pages/jobs.html">Trabajos</a></li>
-          <li><a href="./pages/skills.html">Skills</a></li>
-          <li><a href="./pages/about.html">Sobre mí</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a href="./index.html">
+            <img src="./img/logo.svg" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li><a class="nav-link active px-4" href="./index.html">Inicio</a></li>
+              <li><a class="nav-link px-4" href="./pages/jobs.html">Trabajos</a></li>
+              <li><a class="nav-link px-4" href="./pages/skills.html">Skills</a></li>
+              <li><a class="nav-link px-4" href="./pages/about.html">Sobre mí</a></li>
+            </ul>
+            <a href="./pages/contact.html" class="navButton px-4">Contactar</a>
+          </div>
+        </div>
       </nav>
-      <a href="./pages/contact.html" class="navButton">Contactar</a>
     </header>
-    <section class="hero">
-      <div>
-        <h1>Daniel Pernigotti</h1>
-        <p class="heroSubtitle">UX/UI Designer</p>
+    <section class="hero container">
+      <div class="row">
+        <div class="col-12 col-md-5 align-self-center offset-md-1">
+          <h1>Daniel Pernigotti</h1>
+          <p class="heroSubtitle">UX/UI Designer</p>
+        </div>
+        <img
+          class="col-12 col-md-6"
+          src="./img/hero-img.png"
+          alt="Laptop"
+        />
       </div>
-      <img src="https://placehold.co/600x488" alt="Acá va ir una imagen" />
     </section>
+    <hr />
     <main>
-      <section class="trabajos" id="trabajos">
+      <section class="trabajos container" id="trabajos">
         <h2>Últimos trabajos</h2>
-        <div class="projectText">
-          <p>UX, UI, App</p>
-          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-          <a href="#" class="linkButton">VER PROYECTO</a>
-        </div>
-        <div class="bgImg"></div>
+        <article class="row">
+          <div class="projectText col-12 col-md-5 offset-md-1">
+            <p>UX, UI, App</p>
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            <a href="https://www.behance.net/" target="blank" class="linkButton">VER PROYECTO</a>
+          </div>
+          <div class="bgImg bgImg3 col-12 col-md-6"></div>
+        </article>
       </section>
-      <section class="trabajos trabajosDerecha">
-        <div class="bgImg"></div>
-        <div class="projectText">
-          <p>UX, UI, App</p>
-          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-          <a href="#" class="linkButton">VER PROYECTO</a>
-        </div>
+      <hr class="hrTrabajos" />
+      <section class="trabajos container">
+        <article class="row">
+          <div class="bgImg bgImg2 col-12 col-md-6"></div>
+          <div class="projectText col-12 col-md-5 offset-md-1">
+            <p>UX, UI, App</p>
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            <a href="https://www.behance.net/gallery/142610887/Rediseno-Steam" target="blank" class="linkButton">VER PROYECTO</a>
+          </div>
+        </article>
       </section>
-      <section class="trabajos">
-        <div class="projectText">
-          <p>UX, UI, App</p>
-          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-          <a href="#" class="linkButton">VER PROYECTO</a>
-        </div>
-        <div class="bgImg"></div>
+      <hr class="hrTrabajos" />
+      <section class="trabajos container">
+        <article class="row">
+          <div class="projectText col-12 col-md-5 offset-md-1">
+            <p>UX, UI, App</p>
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            <a href="https://www.behance.net/gallery/134241733/Mercadon-Daniel-Pernigotti" target="blank" class="linkButton">VER PROYECTO</a>
+          </div>
+          <div class="bgImg bgImg1 col-12 col-md-6"></div>
+        </article>
       </section>
+      <hr />
       <section class="verMas">
         <a href="./pages/jobs.html" class="navButton">Ver todos los trabajos</a>
       </section>
     </main>
     <footer>
-      <p>Daniel Pernigotti</p>
-      <a href="tel:+54911 1234-5678">+54911 1234-5678</a>
-      <a href="mailto:lorem@gmail.com">lorem@gmail.com</a>
+      <div class="footerDescription">
+        <p>Daniel Pernigotti</p>
+        <a href="tel:+5491112345678">+54911 1234-5678</a>
+        <a href="mailto:lorem@gmail.com">lorem@gmail.com</a>
+      </div>
       <ul>
         <li>
-          <div class="socialIcon"></div>
+          <a class="socials linkedin" href="https://www.linkedin.com/in/daniel-pernigotti/" target="_blank" rel="noopener">
+            <img src="/img/linkedin.svg" alt="Linkedin"/>
+          </a>
         </li>
         <li>
-          <div class="socialIcon"></div>
+          <a class="socials behance" href="https://www.behance.net/danielpernigo" target="_blank" rel="noopener">
+            <img src="/img/behance.svg" alt="Behance" />
+          </a>
         </li>
         <li>
-          <div class="socialIcon"></div>
+          <a class="socials instagram" href="https://www.instagram.com/danipernigotti/" target="_blank" rel="noopener">
+            <img src="/img/instagram.svg" alt="Instagram"/>
+          </a>
         </li>
       </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+     crossorigin="anonymous"></script>
   </body>
 </html>
