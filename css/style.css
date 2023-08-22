@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Bootstrap variables override */
 body {
   margin: 0;
   background-color: #212121;
@@ -398,7 +397,5 @@ footer ul {
 footer ul li {
   list-style: none;
 }
-
-/* dsa aaa */
 
 /*# sourceMappingURL=style.css.map */
