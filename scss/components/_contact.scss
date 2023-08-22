@@ -1,0 +1,44 @@
+/* Contacto */
+
+.contact {
+  margin: 100px auto 108px;
+  a {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  input {
+    height: 72px;
+    font-size: 18px;
+    border: 1px solid $gray400;
+    background-color: transparent;
+    color: $gray400;
+    padding: 0 24px;
+    width: 100%;
+  }
+
+  textarea {
+    font-size: 18px;
+    border: 1px solid $gray400;
+    background-color: transparent;
+    color: $gray400;
+    padding: 24px;
+    width: 100%;
+  }
+
+  button {
+    display: block;
+    width: 401px;
+    height: 64px;
+    margin: 40px auto;
+    font-family: Helvetica Now Display;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 64px;
+    text-transform: uppercase;
+    background-color: white;
+  }
+}

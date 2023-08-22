@@ -1,0 +1,47 @@
+header {
+  border-bottom: 1px solid $gray700;
+  .navbar {
+    background-color: $gray900 !important;
+    padding: 24px;
+    .navbar-nav {
+      h1 {
+        color: $gray400 !important;
+      }
+      a {
+        color: $gray400 !important;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+    .navbar-nav a:hover {
+      color: white !important;
+    }
+  }
+  .navButton {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 18px;
+    border: 1px solid $gray400;
+    margin-right: 64px;
+  }
+
+  .navButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  img {
+    margin-left: 12px;
+  }
+
+  @media screen and (min-width: 992px) {
+    img {
+      margin-left: 64px; 
+    }
+  }
+}
+

@@ -1,0 +1,114 @@
+/* Trabajos */
+
+.trabajos {
+  .bgImg {
+    height: 464px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .bgImg1 {
+    background-image: url(../img/proj1.webp);
+  }
+
+  .bgImg2 {
+    background-image: url(../img/proj2.webp);
+  }
+
+  .bgImg3 {
+    background-image: url(../img/proj3.webp);
+  }
+
+  h2 {
+    margin: 90px 0 174px;
+    font-weight: 900;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 47px;
+    margin-top: 16px;
+    margin-bottom: 18px;
+    font-weight: Bold;
+  }
+
+  p {
+    font-size: 20px;
+    color: $gray300;
+  }
+
+  .projectText a {
+    font-size: 20px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+  }
+
+  .projectText a:hover {
+    text-decoration: none;
+  }
+
+  :is(p, h3, a) {
+    max-width: 419px;
+  }
+}
+
+.hrTrabajos {
+  margin-bottom: 292px;
+}
+
+/* Trabajos Main */
+
+.trabajosMain {
+  h2 {
+    margin-top: 201px;
+    margin-bottom: 56px;
+  }
+
+  img {
+    border-radius: 24px 24px 0px 0px;
+    width: 100%;
+  }
+}
+
+.jobDescription {
+  border: solid $gray800 1px;
+  border-radius: 0px 0px 24px 24px;
+  padding: 32px 40px 40px 40px;
+  display: grid;
+  grid-template-areas:
+    "title icon"
+    "text text";
+  grid-template-columns: 1fr 30px;
+
+  h3 {
+    grid-area: title;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  p {
+    grid-area: text;
+    color: $gray300;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  a {
+    grid-area: icon;
+  }
+
+  a img {
+    border-radius: 0;
+    width: 24px;
+  }
+}
+
+.jobsDivider {
+  margin-top: 208px;
+}

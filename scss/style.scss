@@ -1,0 +1,14 @@
+@import "./config/variables";
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./utilities/rem";
+@import "./global";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/ctabanner";
+@import "./components/jobs";
+@import "./components/about";
+@import "./components/skills";
+@import "./components/contact";
+@import "./components/footer";
+

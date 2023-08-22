@@ -1,0 +1,13 @@
+@use "sass:math";
+@function rem($value) {
+  @if (type-of($value) == number) {
+    @if (unit($value) != "px") {
+      @error "`#{$value}` needs to be a pixel value.";
+    }
+  } @else {
+    @error "`#{$value}` needs to be a number.";
+  }
+
+  $remValue: math.div($value, 16px);
+  @return #{$remValue}rem;
+}

@@ -1,0 +1,33 @@
+/* Skills */
+
+.skills {
+  h2 {
+    margin: 100px auto 90px;
+  }
+
+  div {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+  }
+
+  ul {
+    position: relative;
+    text-align: center;
+    list-style: none;
+  }
+
+  li {
+    margin: 52px;
+  }
+
+  img {
+    position: absolute;
+    left: calc(50% - 100px);
+    margin-top: 80px;
+  }
+
+  hr {
+    margin: 120px 0 40px;
+  }
+}

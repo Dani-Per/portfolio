@@ -1,0 +1,24 @@
+/* Ver más */
+
+.verMas {
+  display: flex;
+  background-color: #638fff;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 68px;
+    border-radius: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2.56px;
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    background-color: black;
+  }
+}
