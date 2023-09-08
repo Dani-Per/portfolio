@@ -1,22 +1,15 @@
 header {
   border-bottom: 1px solid $gray700;
   .navbar {
-    background-color: $gray900 !important;
+    background-color: $gray900;
     padding: 24px;
     .navbar-nav {
-      h1 {
-        color: $gray400 !important;
-      }
       a {
-        color: $gray400 !important;
         font-family: Montserrat;
-        font-size: 14px;
+        font-size: rem(14px);
         font-weight: 600;
         text-transform: uppercase;
       }
-    }
-    .navbar-nav a:hover {
-      color: white !important;
     }
   }
   .navButton {

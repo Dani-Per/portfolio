@@ -40,6 +40,10 @@
   a {
     color: $gray400;
     display: flex;
+
+    &:hover {
+      color: white;
+    }
   }
   
   ul {

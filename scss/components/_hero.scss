@@ -5,7 +5,7 @@
   padding-bottom: 160px;
 
   h2 {
-    font-size: 64px;
+    font-size: rem(64px);
     font-weight: bold;
     max-width: 516px;
     background: linear-gradient(90deg, #00f0ff 0%, #b454ff 100%);
@@ -16,11 +16,11 @@
   }
 
   &__subtitle {
-    font-size: 24px;
+    font-size: rem(24px);
     max-width: 516px;
     color: #eee;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: 400;
   }
 }

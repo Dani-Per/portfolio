@@ -9,12 +9,12 @@
   }
 
   &__text1 {
-    font-size: 24px;
+    font-size: rem(24px);
     line-height: 1.5;
   }
 
   &__text2 {
-    font-size: 16px;
+    font-size: rem(16px);
     line-height: 1.5;
   }
 
@@ -49,7 +49,7 @@
   }
 
   &__box {
-    border: 1px solid $gray500;
+    border: 1px solid $gray700;
     border-radius: 8px;
     padding: 40px;
   }

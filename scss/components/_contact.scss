@@ -5,13 +5,13 @@
   a {
     display: block;
     text-align: center;
-    font-size: 24px;
+    font-size: rem(24px);
     margin-bottom: 24px;
   }
 
   input {
     height: 72px;
-    font-size: 18px;
+    font-size: rem(18px);
     border: 1px solid $gray400;
     background-color: transparent;
     color: $gray400;
@@ -20,7 +20,7 @@
   }
 
   textarea {
-    font-size: 18px;
+    font-size: rem(18px);
     border: 1px solid $gray400;
     background-color: transparent;
     color: $gray400;
@@ -35,10 +35,16 @@
     margin: 40px auto;
     font-family: Helvetica Now Display;
     font-weight: bold;
-    font-size: 16px;
+    font-size: rem(16px);
     letter-spacing: 2px;
+    border: none;
     border-radius: 64px;
     text-transform: uppercase;
-    background-color: white;
+    color: white;
+    background-color: $primary;
+
+    &:hover {
+      background: $secondary;
+    }
   }
 }
