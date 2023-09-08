@@ -31,3 +31,46 @@
     margin: 120px 0 40px;
   }
 }
+
+
+.skills-progress {
+  padding: 100px 0;
+
+  h2 {
+    margin-bottom: 90px;
+  }
+
+  &__bar-wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+    background-color: $gray800;
+    margin-bottom: 24px;
+  }
+  &__bar {
+      display: block;
+      border-radius: 4px;
+      height: 36px;
+          &.level1 { width: 20%; background-color: $skill}
+          &.level2 { width: 40%; background-color: $skill}
+          &.level3 { width: 60%; background-color: $skill}
+          &.level4 { width: 80%; background-color: $skill}
+          &.level5 { width: 100%; background-color: $skill}
+  }
+  &__name {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      color: black;
+  }
+  &__percent {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: $gray400;
+
+    &.is-full {
+      color: $gray900;
+    }
+  }
+}
