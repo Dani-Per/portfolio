@@ -23,24 +23,13 @@ p {
 a {
   color: white;
   text-decoration: none;
-}
-
-a {
-  color: white;
   position: relative;
-  text-decoration: none;
 }
 
 h2 {
   font-size: 3.5rem;
   font-weight: 800;
   text-align: center;
-}
-
-hr {
-  margin: 0px;
-  border: 1px solid #616161;
-  opacity: 100%;
 }
 
 img {
@@ -55,21 +44,14 @@ header {
   border-bottom: 1px solid #616161;
 }
 header .navbar {
-  background-color: #212121 !important;
+  background-color: #212121;
   padding: 24px;
 }
-header .navbar .navbar-nav h1 {
-  color: #BDBDBD !important;
-}
 header .navbar .navbar-nav a {
-  color: #BDBDBD !important;
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
-}
-header .navbar .navbar-nav a:hover {
-  color: white !important;
 }
 header .navButton {
   display: inline-block;
@@ -119,7 +101,7 @@ header img {
   padding-bottom: 160px;
 }
 .hero h2 {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: bold;
   max-width: 516px;
   background: linear-gradient(90deg, #00f0ff 0%, #b454ff 100%);
@@ -129,11 +111,11 @@ header img {
   text-align: left;
 }
 .hero__subtitle {
-  font-size: 24px;
+  font-size: 1.5rem;
   max-width: 516px;
   color: #eee;
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -166,7 +148,7 @@ header img {
   background: rgba(0, 0, 0, 0.7);
   padding: 20px 68px;
   border-radius: 32px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 2.56px;
   text-transform: uppercase;
@@ -190,24 +172,28 @@ header img {
   font-weight: 900;
 }
 .recentProjects h3 {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 47px;
   margin: 16px 0 18px;
   font-weight: Bold;
 }
 .recentProjects p {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #E0E0E0;
 }
 .recentProjects__text a {
-  font-size: 20px;
-  text-decoration: underline;
-  text-transform: uppercase;
+  font-size: 1.25rem;
   letter-spacing: 4px;
+  text-transform: uppercase;
   font-weight: bold;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 180), rgb(0, 100, 200));
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
 }
 .recentProjects__text a:hover {
-  text-decoration: none;
+  background-size: 0 3px, 100% 3px;
 }
 .recentProjects :is(p, h3, a) {
   max-width: 419px;
@@ -247,7 +233,7 @@ header img {
 }
 .projects__description h3 {
   grid-area: title;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.72px;
   text-transform: uppercase;
@@ -256,7 +242,7 @@ header img {
 .projects__description p {
   grid-area: text;
   color: #E0E0E0;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .projects__description a {
@@ -279,11 +265,11 @@ header img {
   margin: 100px auto 116px;
 }
 .about__text1 {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 .about__text2 {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .about__profile-pic {
@@ -311,7 +297,7 @@ header img {
   margin-bottom: 16px;
 }
 .experience__box {
-  border: 1px solid #9E9E9E;
+  border: 1px solid #616161;
   border-radius: 8px;
   padding: 40px;
 }
@@ -411,12 +397,12 @@ header img {
 .contact a {
   display: block;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 24px;
 }
 .contact input {
   height: 72px;
-  font-size: 18px;
+  font-size: 1.125rem;
   border: 1px solid #BDBDBD;
   background-color: transparent;
   color: #BDBDBD;
@@ -424,7 +410,7 @@ header img {
   width: 100%;
 }
 .contact textarea {
-  font-size: 18px;
+  font-size: 1.125rem;
   border: 1px solid #BDBDBD;
   background-color: transparent;
   color: #BDBDBD;
@@ -438,11 +424,16 @@ header img {
   margin: 40px auto;
   font-family: Helvetica Now Display;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 2px;
+  border: none;
   border-radius: 64px;
   text-transform: uppercase;
-  background-color: white;
+  color: white;
+  background-color: #3719ca;
+}
+.contact button:hover {
+  background: #2c14a2;
 }
 
 /* Footer */
@@ -495,6 +486,9 @@ header img {
 .footer a {
   color: #BDBDBD;
   display: flex;
+}
+.footer a:hover {
+  color: white;
 }
 .footer ul {
   display: flex;

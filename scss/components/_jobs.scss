@@ -11,27 +11,42 @@
   }
 
   h3 {
-    font-size: 32px;
+    font-size: rem(32px);
     line-height: 47px;
     margin: 16px 0 18px;
     font-weight: Bold;
   }
 
   p {
-    font-size: 20px;
+    font-size: rem(20px);
     color: $gray300;
   }
 
   &__text a {
-    font-size: 20px;
-    text-decoration: underline;
-    text-transform: uppercase;
+    font-size: rem(20px);
     letter-spacing: 4px;
+    // text-decoration: underline;
+    text-transform: uppercase;
     font-weight: bold;
-  }
+    background: linear-gradient(
+        to right,
+        rgb(255, 255, 255),
+        rgb(255, 255, 255)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+      );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
 
-  &__text a:hover {
-    text-decoration: none;
+    &:hover {
+      background-size: 0 3px, 100% 3px;
+    }
   }
 
   :is(p, h3, a) {
@@ -75,7 +90,7 @@
 
     h3 {
       grid-area: title;
-      font-size: 24px;
+      font-size: rem(24px);
       font-weight: 700;
       letter-spacing: 0.72px;
       text-transform: uppercase;
@@ -85,7 +100,7 @@
     p {
       grid-area: text;
       color: $gray300;
-      font-size: 16px;
+      font-size: rem(16px);
       font-weight: 400;
     }
 
