@@ -1,35 +1,19 @@
-/* Trabajos */
+/* Trabajos inicio */
 
-.trabajos {
-  .bgImg {
-    height: 464px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .bgImg1 {
-    background-image: url(../img/proj1.webp);
-  }
-
-  .bgImg2 {
-    background-image: url(../img/proj2.webp);
-  }
-
-  .bgImg3 {
-    background-image: url(../img/proj3.webp);
+.recentProjects {
+  img {
+    @include fade-in-on-scroll();
   }
 
   h2 {
-    margin: 90px 0 174px;
+    margin: 140px 0 174px;
     font-weight: 900;
   }
 
   h3 {
     font-size: 32px;
     line-height: 47px;
-    margin-top: 16px;
-    margin-bottom: 18px;
+    margin: 16px 0 18px;
     font-weight: Bold;
   }
 
@@ -38,7 +22,7 @@
     color: $gray300;
   }
 
-  .projectText a {
+  &__text a {
     font-size: 20px;
     text-decoration: underline;
     text-transform: uppercase;
@@ -46,69 +30,76 @@
     font-weight: bold;
   }
 
-  .projectText a:hover {
+  &__text a:hover {
     text-decoration: none;
   }
 
   :is(p, h3, a) {
     max-width: 419px;
   }
+
+  @media screen and (min-width: map-get($grid-breakpoints, md)) {
+    article:not(:last-child) {
+      margin-bottom: 292px;
+      border-bottom: 1px solid #616161;
+    }
+  }
 }
 
-.hrTrabajos {
-  margin-bottom: 292px;
-}
+/* Trabajos */
 
-/* Trabajos Main */
-
-.trabajosMain {
+.projects {
   h2 {
-    margin-top: 201px;
-    margin-bottom: 56px;
+    margin: 180px 0 64px;
   }
 
   img {
-    border-radius: 24px 24px 0px 0px;
     width: 100%;
+    @include fade-in-on-scroll();
   }
-}
-
-.jobDescription {
-  border: solid $gray800 1px;
-  border-radius: 0px 0px 24px 24px;
-  padding: 32px 40px 40px 40px;
-  display: grid;
-  grid-template-areas:
-    "title icon"
-    "text text";
-  grid-template-columns: 1fr 30px;
-
-  h3 {
-    grid-area: title;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 0.72px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
+  img:first-child {
+    border-radius: 24px 24px 0px 0px;
+    height: 470px;
+    object-fit: cover;
   }
 
-  p {
-    grid-area: text;
-    color: $gray300;
-    font-size: 16px;
-    font-weight: 400;
+  &__description {
+    border: solid $gray800 1px;
+    border-radius: 0px 0px 24px 24px;
+    padding: 32px 40px 40px 40px;
+    display: grid;
+    grid-template-areas:
+      "title icon"
+      "text text";
+    grid-template-columns: 1fr 30px;
+
+    h3 {
+      grid-area: title;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.72px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    p {
+      grid-area: text;
+      color: $gray300;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    a {
+      grid-area: icon;
+    }
+
+    a img {
+      border-radius: 0;
+      width: 24px;
+    }
   }
 
-  a {
-    grid-area: icon;
+  .jobsDivider {
+    margin-top: 208px;
   }
-
-  a img {
-    border-radius: 0;
-    width: 24px;
-  }
-}
-
-.jobsDivider {
-  margin-top: 208px;
 }

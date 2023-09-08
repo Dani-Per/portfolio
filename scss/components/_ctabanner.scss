@@ -1,11 +1,12 @@
 /* Ver más */
 
-.verMas {
+.viewAll {
   display: flex;
   background-color: #638fff;
   height: 400px;
   justify-content: center;
   align-items: center;
+  padding: 0 40px;
 
   a {
     color: white;
@@ -16,6 +17,7 @@
     font-weight: 700;
     letter-spacing: 2.56px;
     text-transform: uppercase;
+    text-align: center;
   }
 
   a:hover {

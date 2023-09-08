@@ -1,18 +1,65 @@
 /* Sobre mi */
 
-.aboutMe {
+.about {
   margin-bottom: 112px;
+  padding-bottom: 112px;
+
   h2 {
     margin: 100px auto 116px;
   }
+
+  &__text1 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  &__text2 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &__profile-pic {
+    object-fit: cover;
+  }
 }
 
-.aboutText1 {
-  font-size: 24px;
-  line-height: 1.5;
-}
+.experience {
+  padding-bottom: 180px;
 
-.aboutText2 {
-  font-size: 16px;
-  line-height: 1.5;
+  p {
+    margin-bottom: 16px;
+  }
+
+  p, li {
+    color: $gray300;
+    font-size: rem(18px);
+  }
+
+  li {
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    margin-top: 60px;
+    margin-bottom: 16px;
+  }
+
+  &__box {
+    border: 1px solid $gray500;
+    border-radius: 8px;
+    padding: 40px;
+  }
+
+  &__bg-parallax {
+    height: 100px;
+    width: 100%;
+    background-image: url(../img/bg-decoration.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+  }
 }

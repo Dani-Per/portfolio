@@ -17,11 +17,11 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <h1>
             <a href="./index.html">
-              <img src="./img/logo.webp" alt="Logo" height="47" width="37" />
+              <img src="./img/logo.webp" alt="Logo DP" height="47" width="37" />
             </a>
           </h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,78 +39,74 @@
         </div>
       </nav>
     </header>
-    <section class="hero container">
-      <div class="row">
-        <div class="col-12 col-md-5 align-self-center offset-md-1">
-          <h1>Daniel Pernigotti</h1>
-          <p class="heroSubtitle">Diseñador UX/UI</p>
+    <section class="hero divider-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-5 align-self-center offset-lg-1">
+            <h2>Daniel Pernigotti</h2>
+            <p class="hero__subtitle">Diseñador UX/UI</p>
+          </div>
+          <img
+            class="col-12 col-md-6"
+            src="./img/hero-img.webp"
+            alt="Laptop"
+          />
         </div>
-        <img
-          class="col-12 col-md-6"
-          src="./img/hero-img.webp"
-          alt="Laptop"
-        />
       </div>
     </section>
-    <hr />
     <main>
-      <section class="trabajos container" id="trabajos">
+      <section class="recentProjects container" id="trabajos">
         <h2>Últimos trabajos</h2>
         <article class="row">
-          <div class="projectText col-12 col-md-5 offset-md-1">
-            <p>UX, UI, App</p>
-            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-            <a href="https://www.behance.net/" target="blank" class="linkButton">VER PROYECTO</a>
+          <div class="recentProjects__text col-12 col-md-5 offset-md-1 mb-4 mb-md-0">
+            <p>Training, Fitness, Web Design</p>
+            <h3>La App de Fitness que Está Cambiando el Juego: Vault</h3>
+            <a href="https://www.behance.net/gallery/178496187/Training-app-website-Design?tracking_source=search_projects%7Capp+design" target="blank" class="linkButton">VER PROYECTO</a>
           </div>
-          <div class="bgImg bgImg3 col-12 col-md-6"></div>
+          <div class="col-12 col-md-6"><img src="img/vault.webp" alt="Vault: Word's N°1 app for Online training"/></div>
         </article>
-      </section>
-      <hr class="hrTrabajos" />
-      <section class="trabajos container">
-        <article class="row">
-          <div class="bgImg bgImg2 col-12 col-md-6"></div>
-          <div class="projectText col-12 col-md-5 offset-md-1">
-            <p>UX, UI, App</p>
-            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        <article class="row flex-column-reverse flex-md-row">
+          <div class="col-12 col-md-6"><img src="img/steam.webp" alt="Steam Rediseño de App"/></div>
+          <div class="recentProjects__text col-12 col-md-5 offset-md-1 mb-4 mb-md-0">
+            <p>Gaming, App update, UX/UI</p>
+            <h3>El nuevo y revolucionario diseño de la App de Steam</h3>
             <a href="https://www.behance.net/gallery/142610887/Rediseno-Steam" target="blank" class="linkButton">VER PROYECTO</a>
           </div>
         </article>
-      </section>
-      <hr class="hrTrabajos" />
-      <section class="trabajos container">
         <article class="row">
-          <div class="projectText col-12 col-md-5 offset-md-1">
-            <p>UX, UI, App</p>
-            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+          <div class="recentProjects__text col-12 col-md-5 offset-md-1 mb-4 mb-md-0">
+            <p>E-Commerce, Marketplace, UX/UI</p>
+            <h3>Creación de la app más grande de mercado callejero: Mercadon</h3>
             <a href="https://www.behance.net/gallery/134241733/Mercadon-Daniel-Pernigotti" target="blank" class="linkButton">VER PROYECTO</a>
           </div>
-          <div class="bgImg bgImg1 col-12 col-md-6"></div>
+          <div class="col-12 col-md-6">
+            <img src="img/mercadon.webp" alt="Mercadon - El mercado más grande de vendedores ambulantes" />
+          </div>
         </article>
       </section>
-      <hr />
-      <section class="verMas">
+      <section class="viewAll">
         <a href="./pages/jobs.html" class="navButton">Ver todos los trabajos</a>
       </section>
     </main>
-    <footer>
-      <div class="footerDescription">
+    <footer class="footer">
+      <div class="footer__description">
         <p>Daniel Pernigotti</p>
         <a href="tel:+5491112345678">+54911 1234-5678</a>
-        <a href="mailto:lorem@gmail.com">lorem@gmail.com</a>
+        <a href="mailto:daniperni97@gmail.com">daniperni97@gmail.com</a>
       </div>
       <ul>
         <li>
-          <a class="socials linkedin" href="https://www.linkedin.com/in/daniel-pernigotti/" target="_blank" rel="noopener">
+          <a class="footer__social footer__social--linkedin" href="https://www.linkedin.com/in/daniel-pernigotti/" target="_blank" rel="noopener">
             <img src="./img/linkedin.svg" alt="Linkedin"/>
           </a>
         </li>
         <li>
-          <a class="socials behance" href="https://www.behance.net/danielpernigo" target="_blank" rel="noopener">
+          <a class="footer__social footer__social--behance" href="https://www.behance.net/danielpernigo" target="_blank" rel="noopener">
             <img src="./img/behance.svg" alt="Behance" />
           </a>
         </li>
         <li>
-          <a class="socials instagram" href="https://www.instagram.com/danipernigotti/" target="_blank" rel="noopener">
+          <a class="footer__social footer__social--instagram" href="https://www.instagram.com/danipernigotti/" target="_blank" rel="noopener">
             <img src="./img/instagram.svg" alt="Instagram"/>
           </a>
         </li>

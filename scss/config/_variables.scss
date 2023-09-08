@@ -9,9 +9,19 @@ $gray700: #616161;
 $gray800: #424242;
 $gray900: #212121;
 
+$skill: #9ad3f3;
+
 $social: (
     linkedin: #0077b5,
     behance: #053eff,
     instagram: #f10174
 ); 
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

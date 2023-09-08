@@ -34,14 +34,21 @@ header {
     color: black;
   }
 
+  .navbar-toggler-icon {
+    background-image: url(../img/menu.svg)
+  }
+
+  li {
+    @include underlineEffect();
+  }
+
   img {
     margin-left: 12px;
   }
 
   @media screen and (min-width: 992px) {
     img {
-      margin-left: 64px; 
+      margin-left: 64px;
     }
   }
 }
-
